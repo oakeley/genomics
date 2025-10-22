@@ -39,8 +39,8 @@ conda install pip
 sudo dpkg -i /_org/saliogen/bin/jdk-25_linux-x64_bin.deb
 
 # Fix Java path in conda environment
-mv /home/edward/anaconda3/bin/java /home/edward/anaconda3/bin/java.bak
-ln -s /usr/lib/jvm/jdk-25-oracle-x64/bin/java /home/edward/anaconda3/bin/java
+mv ~/anaconda3/bin/java ~/anaconda3/bin/java.bak
+ln -s /usr/lib/jvm/jdk-25-oracle-x64/bin/java ~/anaconda3/bin/java
 ```
 
 ### 3. Install BWA (Burrows-Wheeler Aligner)
