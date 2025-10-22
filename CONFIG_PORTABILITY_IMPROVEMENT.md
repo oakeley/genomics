@@ -13,7 +13,6 @@ Replaced hard-coded paths in `HC_custom_scripts.py` with configuration-based pat
 Added new configuration parameter:
 ```json
 {
-  ...
   "custom_scripts_directory": "/_org/saliogen/ws_saliogen/notebook/custom_scripts"
 }
 ```
@@ -43,7 +42,6 @@ def custom_scripts_directory(self) -> Path:
 FIND_INT_SITES_HC_PATH = "/_org/saliogen/ws_saliogen/notebook/custom_scripts/find_integration_sites_HC.py"
 FIND_INT_SITES_DONOR_HC_PATH = "/_org/saliogen/ws_saliogen/notebook/custom_scripts/find_integration_sites_donor_HC.py"
 SUMMARIZE_INT_SITES_HC_PATH = "/_org/saliogen/ws_saliogen/notebook/custom_scripts/summarize_integration_sites_HC.py"
-...
 ```
 
 **After (Config-based paths):**
@@ -57,7 +55,6 @@ _SCRIPTS_BASE = config.custom_scripts_directory
 FIND_INT_SITES_HC_PATH = _SCRIPTS_BASE / "find_integration_sites_HC.py"
 FIND_INT_SITES_DONOR_HC_PATH = _SCRIPTS_BASE / "find_integration_sites_donor_HC.py"
 SUMMARIZE_INT_SITES_HC_PATH = _SCRIPTS_BASE / "summarize_integration_sites_HC.py"
-...
 ```
 
 ## Benefits
@@ -87,7 +84,6 @@ Create `/_org/saliogen/bluegenomics_config.json`:
   "data_directory": "/path/to/data",
   "genome_directory": "/path/to/genomes",
   "custom_scripts_directory": "/path/to/custom_scripts",
-  ...
 }
 ```
 
