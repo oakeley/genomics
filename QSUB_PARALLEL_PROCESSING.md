@@ -154,7 +154,7 @@ To verify parallel processing is working:
 
 ## Backward Compatibility
 
-✅ **100% backward compatible**
+**100% backward compatible**
 
 - Single alignment inputs still work (sequential, no qsub overhead)
 - Explicit `use_qsub=False` still forces sequential processing
