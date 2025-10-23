@@ -16,12 +16,13 @@ The following command-line tools must be installed and available in PATH:
 8. **Python dependencies** - Various python packages
 9. **R and some dependencies** - R is needed for Homer
 10. **Homer** - For peak-finding and integration site analysis
+11. **Playwright** - For exporting and rendering Jupyter notebook content as a PDF
 
 ### 1. Create Conda Environment (Python 3.11)
 
 ```bash
-conda create -n saliogen python=3.11
-conda activate saliogen
+conda create -n bluegenomics python=3.11
+conda activate bluegenomics
 conda install pip
 ```
 
@@ -86,10 +87,17 @@ BiocManager::install(c("SummarizedExperiment", "tximport", "biomaRt"))
 
 ## 10. Install HOMER
 ```bash
-cd /_opt/saliogen/bin
 wget http://homer.ucsd.edu/homer/configureHomer.pl
 conda activate saliogen
 perl configureHomer.pl -install homer
+```
+
+## 11. Install PLAYWRIGHT
+```bash
+# Install the Python package
+pip install "nbconvert[webpdf]"
+# Install the browser rendering engines
+playwright install
 ```
 
 ## Quick Start
