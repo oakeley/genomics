@@ -1,7 +1,7 @@
 # BlueGenomics Module
 
 ## Overview
-BlueGenomics is a replacement module for some legacy dependencies in Blue Marlin notebooks. It provides equivalent functionality for bioinformatics workflow management while maintaining compatibility with existing code. It does not depend on any of the legacy code and was reverse engineered by trial and error based on the legacy outputs in the old notebooks. Claude code was used to generate the initial structure and interface.
+BlueGenomics is a replacement module for some legacy dependencies in our Jupyter notebooks. It provides equivalent functionality for bioinformatics workflow management while maintaining compatibility with existing code. It does not depend on any of the legacy code and was reverse engineered by trial and error based on the legacy outputs in the old notebooks. Claude code was used to generate the initial structure and interface.
 
 ## Installation
 The following command-line tools must be installed and available in PATH:
