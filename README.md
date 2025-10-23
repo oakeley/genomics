@@ -36,7 +36,8 @@ conda install pip
 
 ```bash
 # Install JDK 25
-sudo dpkg -i /_org/saliogen/bin/jdk-25_linux-x64_bin.deb
+wget https://download.oracle.com/java/25/latest/jdk-25_linux-x64_bin.deb
+sudo dpkg -i jdk-25_linux-x64_bin.deb
 
 # Fix Java path in conda environment
 mv ~/anaconda3/bin/java ~/anaconda3/bin/java.bak
@@ -44,37 +45,31 @@ ln -s /usr/lib/jvm/jdk-25-oracle-x64/bin/java ~/anaconda3/bin/java
 ```
 
 ### 3. Install BWA (Burrows-Wheeler Aligner)
-
 ```bash
 sudo apt install bwa
 ```
 
 ### 4. Install samtools
-
 ```bash
 sudo apt install samtools
 ```
 
 ### 5. Install FastQC
-
 ```bash
 sudo apt install fastqc
 ```
 
 ### 6. Install MultiQC
-
 ```bash
 conda install multiqc
 ```
 
 ### 7. Install UMI-tools
-
 ```bash
 conda install bioconda::umi_tools
 ```
 
 ### 8. Install Required Python Packages
-
 ```bash
 pip install numpy pandas pysam biopython pyranges plotly matplotlib seaborn jupyter ipython ipywidgets scipy scikit-learn tables tqdm upsetplot
 ```
